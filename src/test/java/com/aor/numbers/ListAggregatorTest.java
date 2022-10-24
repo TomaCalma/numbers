@@ -48,4 +48,15 @@ public class ListAggregatorTest {
 
         Assertions.assertEquals(4, distinct);
     }
+
+    @Test
+    public void max_bug_7263(){
+        List<Integer> lista1 = Arrays.asList(-1,-4,-5);
+
+        ListAggregator aggregator = new ListAggregator();
+        int max = aggregator.max(lista1);
+
+        Assertions.assertEquals(-1, max);
+    }
+
 }
