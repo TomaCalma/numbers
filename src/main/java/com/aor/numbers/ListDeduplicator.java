@@ -7,7 +7,8 @@ import java.util.List;
  * An utility class that removes duplicate numbers
  * from a list.
  */
-public class ListDeduplicator {
+public class ListDeduplicator implements GenericListDeduplicator{
+
 
     /**
      * Removes duplicate numbers from a list.
